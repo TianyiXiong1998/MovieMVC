@@ -11,5 +11,8 @@ namespace MovieCRM.Core.Contracts.Service
     {
         Task<int> InsertActors(ActorsModel actorsModel);
         Task<IEnumerable<ActorsModel>> GetAllActors();
+        Task<int> DeleteActors(int id);
+        Task<int> UpdateActors(ActorsModel actorsModel);
+        Task<ActorsModel> GetActorsById(int id);
     }
 }

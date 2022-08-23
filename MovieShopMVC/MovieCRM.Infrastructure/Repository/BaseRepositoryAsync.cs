@@ -41,10 +41,10 @@ namespace MovieCRM.Infrastructure.Repository
             return entity;
         }
 
-        public async Task<int> InsertAsync(T entity)
+        public  Task<int> InsertAsync(T entity)
         {
             db.Set<T>().Add(entity);
-            return await db.SaveChangesAsync();
+            return  db.SaveChangesAsync();
         }
 
         public async Task<int> UpdateAsync(T entity)

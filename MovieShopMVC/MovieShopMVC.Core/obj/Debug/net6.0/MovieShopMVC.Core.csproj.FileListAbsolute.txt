@@ -63,3 +63,8 @@ E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\MovieCRM.Infrastruct
 E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\MovieCRM.Infrastructure.pdb
 E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\MovieCRM.Core.pdb
 E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\obj\Debug\net6.0\MovieShopMVC.Core.csproj.CopyComplete
+E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+E:\MovieMVC\MovieShopMVC\MovieShopMVC.Core\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

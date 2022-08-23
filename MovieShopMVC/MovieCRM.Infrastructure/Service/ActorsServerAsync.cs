@@ -19,6 +19,25 @@ namespace MovieCRM.Infrastructure.Service
             actorsRepositoryAsync = _actorsRepositoryAsync;
         }
 
+        public Task<int> DeleteActors(int id)
+        {
+            return actorsRepositoryAsync.DeleteAsync(id);
+        }
+
+        public async Task<ActorsModel> GetActorsById(int id)
+        {
+            var actors = await actorsRepositoryAsync.GetByIdAsync(id);
+            if (actors != null)
+            {
+                ActorsModel actorsModel = new ActorsModel();
+                actorsModel.Id = actors.Id;
+                actorsModel.Name = actors.Name;
+                return actorsModel;
+            }
+            else return null;
+            
+        }
+
         public async Task<IEnumerable<ActorsModel>> GetAllActors()
         {
             var result = await actorsRepositoryAsync.GetAllAsync();
@@ -38,11 +57,20 @@ namespace MovieCRM.Infrastructure.Service
 
         }
 
-        public async Task<int> InsertActors(ActorsModel actorsModel)
+        public  Task<int> InsertActors(ActorsModel actorsModel)
         {
             MovieActors actors = new MovieActors();
             actors.Name = actorsModel.Name;
-            var action = await actorsRepositoryAsync.InsertAsync(actors);
+            var action = actorsRepositoryAsync.InsertAsync(actors);
+            return action;
+        }
+
+        public Task<int> UpdateActors(ActorsModel actorsModel)
+        {
+            MovieActors actors = new MovieActors();
+            actors.Id = actorsModel.Id;
+            actors.Name = actorsModel.Name;
+            var action = actorsRepositoryAsync.UpdateAsync(actors);
             return action;
         }
     }
